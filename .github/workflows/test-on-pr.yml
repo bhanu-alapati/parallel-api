@@ -12,7 +12,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      # - name: Step 1 - 🛒 Checkout main branch from Github
+      # - name: Step 1 - 🛒 Checkout main branch from Github comment
       #   uses: actions/checkout@v2
       # - name: Step 3 - ⚙️ setup node 16
       #   uses: actions/setup-node@v1
