@@ -24,3 +24,13 @@ jobs:
         run: echo Complted actions
       - name: Step 6 - npm install
         run: npm install
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: AKIAWZQD3P3YOM2CN2EO
+          aws-secret-access-key: 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
+          aws-region: us-east-1
+      - name: Run CodeBuild
+        uses: aws-actions/aws-codebuild-run-build@v1
+        with:
+          project-name: parallel-api-cb
