@@ -12,18 +12,18 @@ jobs:
       NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Step 1 - 🛒 Checkout main branch from Github
-        uses: actions/checkout@v2
-      - name: Step 3 - ⚙️ setup node 16
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-          scope: '@bhanu-alapati'
-      - name: Step 5 - echo statement
-        run: echo Complted actions
-      - name: Step 6 - npm install
-        run: npm install
+      # - name: Step 1 - 🛒 Checkout main branch from Github
+      #   uses: actions/checkout@v2
+      # - name: Step 3 - ⚙️ setup node 16
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 16
+      #     registry-url: https://npm.pkg.github.com/
+      #     scope: '@bhanu-alapati'
+      # - name: Step 5 - echo statement
+      #   run: echo Complted actions
+      # - name: Step 6 - npm install
+      #   run: npm install
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
